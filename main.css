@@ -3,36 +3,46 @@
     src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
 #wrapper{
     margin: 0;
     padding: 0;
 }
 
-/* ---------------------------------------------------------------------------- ARRIERE_PLAN_ACCUEIL ---------------------------------------------------------------------------- */
+/* ---------------------------------- ARRIERE_PLAN_ACCUEIL ---------------------------------- */
 header{
     background-image: url(img/h5-revolution-img-1.jpg);
-    height: fit-content;
+    height: 100vh;
 }
 
-/* ---------------------------------------------------------------------------- NAVBAR ---------------------------------------------------------------------------- */
+/* ---------------------------------- NAVBAR ---------------------------------- */
 nav{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
     background-color: rgba(0, 0, 0, 0.5);
     font-family: oswald;
 }
 
-nav h3{
+#navtitle{
     color: white;
     font-weight: bolder;
+    font-size: 165%;
+    display: flex;
+    align-items: center;
+    min-width: 136px;
 }
 
-nav ul{
+#navbar{
     display: flex;
-    flex-direction: row;
+    font-size: larger;
 }
 
 nav ul li{
@@ -41,10 +51,35 @@ nav ul li{
     padding: 15px;
 }
 
-/* ---------------------------------------------------------------------------- IMAGE_ACCUEIL ---------------------------------------------------------------------------- */
+#socialmedia{
+    display: flex;
+    font-size: larger;
+}
+
+li a{
+    color: white;
+    text-decoration: none;
+}
+
+li a:hover{
+    color: gray;
+}
+/* ---------------------------------- IMAGE_ACCUEIL ---------------------------------- */
 
 header figure{
     display: flex;
     justify-content: center;
     padding: 15px;
+}
+
+/* ---------------------------------- BANDEAU D'ACCEUIL ---------------------------------- */
+
+#bandeaucitation{
+    background-color: rgb(180, 149, 91);
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: oswald;
+    font-size: 300%;
+    font-weight: 200%;
 }
