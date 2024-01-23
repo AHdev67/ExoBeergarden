@@ -1,13 +1,33 @@
+@font-face {
+    font-family: oswald;
+    src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
 #wrapper{
     margin: 0;
     padding: 0;
 }
 
+/* ---------------------------------------------------------------------------- ARRIERE_PLAN_ACCUEIL ---------------------------------------------------------------------------- */
+header{
+    background-image: url(img/h5-revolution-img-1.jpg);
+    height: fit-content;
+}
+
+/* ---------------------------------------------------------------------------- NAVBAR ---------------------------------------------------------------------------- */
 nav{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    
+    justify-content: space-between;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: oswald;
+}
+
+nav h3{
+    color: white;
+    font-weight: bolder;
 }
 
 nav ul{
@@ -17,4 +37,14 @@ nav ul{
 
 nav ul li{
     list-style: none;
+    color: white;
+    padding: 15px;
+}
+
+/* ---------------------------------------------------------------------------- IMAGE_ACCUEIL ---------------------------------------------------------------------------- */
+
+header figure{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
 }
