@@ -164,3 +164,20 @@ button:hover{
     opacity: 75%;
 }
 
+/* ---------------------------------- GALLERIE ---------------------------------- */
+
+#gallery{
+    display: flex;
+}
+
+#gallery figure{
+    width: 25%;
+    overflow: hidden;
+}
+#gallery figure img{
+    transition: transform .2s;
+}
+
+#gallery figure img:hover{
+    transform: scale(1.1);
+}
