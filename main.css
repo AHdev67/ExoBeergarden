@@ -26,6 +26,10 @@ header{
     height: 100vh;
 }
 
+header figure{
+    height: 100vh;
+}
+
 /* ---------------------------------- NAVBAR ---------------------------------- */
 nav{
     display: flex;
@@ -228,18 +232,26 @@ button:hover{
 }
 
 .bandeaupub article figure{
-    padding: 25px;
+    margin: 25px;
 }
 
-.bandeaupub article figure img{
+.bandeaupub img{
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.bandeaupub img:hover{
+    filter: sepia(100);
+}
+
 .bandeaupub h2{
     font-weight: bold;
     font-size: larger;
+}
+
+.bandeaupub h2:hover{
+    color: rgb(196, 156, 83);
 }
 
 .bandeaupub p{
