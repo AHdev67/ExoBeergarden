@@ -296,9 +296,33 @@ button:hover{
 
 /* ---------------------------------- LA CARTE ---------------------------------- */
 
-#gmaps iframe{
-    width: 99.2vw;
-    box-sizing: border-box;
-    filter: grayscale(100);
+#overlay{
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 5%, rgba(255,255,255,0) 16%, rgba(255,255,255,0) 82%, rgba(0,0,0,1) 95%);
 }
 
+#carte iframe{
+    width: 99.2vw;
+    height: 800px;
+    filter: grayscale(100%) invert(100%);
+
+}
+
+/* ---------------------------------- FOOTER ---------------------------------- */
+
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+footer p{
+    color: white;
+    font-family: oswald;
+    font-size: 180%;
+}
